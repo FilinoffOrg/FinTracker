@@ -1,0 +1,10 @@
+POST http://localhost:8000/login
+User-Agent: IntelliJ HTTP Client/PyCharm 2024.3.3
+Accept-Encoding: br, deflate, gzip, x-gzip
+Accept: */*
+content-length: 0
+
+<> 2025-02-20T154539.422.json
+
+###
+

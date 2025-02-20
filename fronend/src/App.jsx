@@ -1,13 +1,17 @@
-import Log_Reg_In from './components/Log_Reg_In'
+import { Route, Routes  }  from "react-router-dom";
+import {AuthPage} from "./pages/AuthPage";
+import {Page404} from "./pages/Page404";
+import {MainPage} from "./pages/MainPage";
 
-
-function App() {
+export const App = () => {
 
   return (
-    <div className="flex justify-center items-center mt-50">
-      <Log_Reg_In/>
-    </div>
-  )
-}
+      <Routes>
+          <Route path="/auth" element={<AuthPage />} />
+          <Route path="/" element={<MainPage />} />
+          <Route path="*" element={<Page404 />} />
 
-export default App
+      </Routes>
+  );
+};
+
